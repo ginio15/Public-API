@@ -112,14 +112,14 @@ GrapeVine/
 │   └── users.py              # User management endpoints
 │
 ├── services/                 # Core backend services
-    └──auth/
-    │  ├── auth_config.py     # Authentication configuration
-    │  └── security.py        # Password hashing and security functions
-    │
-    └──db/
+│   ├──auth/
+│   │  ├── auth_config.py     # Authentication configuration
+│   │  └── security.py        # Password hashing and security functions
+│   │
+│   └──db/
 │       ├── db_config.py      # Database configuration
 │       ├── db_models.py      # SQLAlchemy ORM models
-│       ├── init_db.py        # Database initialization script
+│       └── init_db.py        # Database initialization script
 │      
 │
 └── test/                     # Test suite
@@ -127,8 +127,8 @@ GrapeVine/
     ├── test_main.py          # Main application tests
     ├── test_projects.py      # Project endpoint tests
     ├── test_users.py         # User endpoint tests
-    └── test_validation.py    # Input validation tests
-    └── conftest.py           # Configure Pytest
+    ├── test_validation.py    # Input validation tests
+    ├── conftest.py           # Configure Pytest
     └── utils/                    
         ├── debug_db.py       # Database debugging utility
         └── clear_skills.py   # Utility to clear skills
